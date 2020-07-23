@@ -1,0 +1,23 @@
+// Text color Dark Theme
+$Primary-color: #1e202a;
+$Secondary-color: #8b97c6;
+
+// Light Theme text color
+$Primary-color2: #63687e;
+$Secondary-color2: #8b97c6;
+
+@mixin cardContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+@mixin cardBig {
+    height: 200px;
+    background: #252a41;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
