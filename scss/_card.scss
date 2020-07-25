@@ -1,10 +1,30 @@
+// Primary color
+$Lime-green: #1db489;
+$Bright-red: #dc414c;
+$Instagram: #df4996;
+
 // Text color Dark Theme
 $Primary-color: #1e202a;
 $Secondary-color: #8b97c6;
 
-// Light Theme text color
+// Text color Light Theme 
 $Primary-color2: #63687e;
 $Secondary-color2: #8b97c6;
+
+$show-image: true;
+$twiter-image: url(../images/icon-twitter.svg);
+$up-image: url(../images/icon-up.svg);
+$dowm-image: url(../images/icon-down.svg);
+
+@mixin upBackground {
+    @if $show-image {
+        &#up-img {
+            background-image: $up-image;
+            height: 10px;
+            width: 10px;
+        } 
+    }
+}
 
 @mixin cardContainer {
     display: grid;
@@ -13,11 +33,44 @@ $Secondary-color2: #8b97c6;
 }
 
 @mixin cardBig {
-    height: 200px;
+    height: 220px;
     background: #252a41;
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
+@mixin cardSmall {
+    height: 120px;
+    background: #252a41;
+    border-radius: 6px;
+    &.overview-card {
+        padding: 0 20px;
+        
+        .overview-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .overview-footer{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .stats {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+                img {
+                    margin-right: 5px;
+                }
+            }
+        }
+        
+    }
+    
+
+}

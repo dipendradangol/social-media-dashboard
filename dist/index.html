@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
   integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" 
   crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -18,13 +19,15 @@
   </style>
 </head>
 <body>
-  <header>
-    <h2 class="md-heading">
-      Social Media Dashboard
-    </h2>
-    <h5 class="sm-heading">
-      Total Followers: 23,004
-    </h5>
+  <div class="header">
+    <div>
+      <h2 class="md-heading">
+        Social Media Dashboard
+      </h2>
+      <h5 class="sm-heading">
+        Total Followers: 23,004
+      </h5>
+    </div>
     <div class="theme-mode">
       <h5 class="mode">Dark Mode</h5>
       <level class="switch">
@@ -32,96 +35,168 @@
         <span class="slider-round"></span>
       </level>
     </div>
-  </header>
+  </div>
   <div class="container">
     <div class="card-item1">
-      <div class="card">
-          <i class="fab fa-facebook-square">@nathanf</i>
-          <h1>1987</h1>
-          <p>Followers</p>
-          <h5>12 Today</h5>
+      <div class="card-header">
+        <img src="../images/icon-facebook.svg" alt="icon-facebook">
+        <p>@nathanf</p>
+      </div>
+      <h1>1987</h1>
+      <p class="followers">Followers</p>
+      <div class="card-footer">
+        <img src="../images/icon-up.svg" alt="icon-up">
+        <h5 class="color-lime">12 Today</h5>
       </div>
     </div>
     <div class="card-item2">
-      <div class="card">
-          <i class="fab fa-twiter">@nathanf</i>
-          <h1>1044</h1>
-          <p>Followers</p>
-          <h5>99 Today</h5>
+      <div class="card-header">
+        <img src="../images/icon-twitter.svg" alt="icon-twitter">
+        <p>@nathanf</p>
+      </div>  
+      <h1>1044</h1>
+      <p class="followers">Followers</p>
+      <div class="card-footer">
+        <img src="../images/icon-up.svg" alt="icon-up">
+        <h5 class="color-lime">99 Today</h5>
       </div>
     </div>
     <div class="card-item3">
-      <div class="card">
-          <i class="fab fa-instagram">@realnathanf</i>
-          <h1>11k</h1>
-          <p>Followers</p>
-          <h5>1099 Today</h5>
+      <div class="card-header">
+        <img src="../images/icon-instagram.svg" alt="icon-instagram">
+        <p>@realnathanf</p>
+      </div>
+      <h1>11k</h1>
+      <p>Followers</p>
+      <div class="card-footer">
+        <img src="../images/icon-up.svg" alt="icon-up">
+        <h5 class="color-lime">1099 Today</h5>
       </div>
     </div>
     <div class="card-item4">
-      <div class="card">
-          <i class="fab fa-youtube">Nathan F.</i>
-          <h1>9239</h1>
-          <p>Subscribers</p>
-          <h5>144 Today</h5>
+      <div class="card-header">
+        <img src="../images/icon-youtube.svg" alt="icon-youtube">
+        <p>Nathan F.</p>
+      </div>
+      <h1>9239</h1>
+      <p>Subscribers</p>
+      <div class="card-footer">
+        <img src="../images/icon-down.svg" alt="icon-down">
+        <h5 class="color-red">144 Today</h5>
       </div>
     </div>
   </div>
   
-  <div>
-    <h2 class="md-heading">
+  <div class="overview-hd">
+    <h2>
       Overview - Today
     </h2>
   </div>
 
   <div class="buttom-container">
     <div class="overview-card">
+      <div class="overview-header">
       <p>Page Views</p>
-      <i class="fab fa-facebook-square"></i>
-      <h2>87</h2>
-      <h5>3%</h5>
+      <img src="../images/icon-facebook.svg" alt="icon-facebook">
+      </div>
+      <div class="overview-footer">
+        <h2>87</h2>
+        <div class="stats">
+          <img src="../images/icon-up.svg" alt="icon-up">
+          <h5 class="color-lime">3%</h5>
+        </div>
+      </div>
     </div>
     <div class="overview-card">
-      <p>Likes</p>
-      <i class="fab fa-facebook-square"></i>
-      <h2>52</h2>
-      <h5>2%</h5>
+      <div class="overview-header">
+        <p>Likes</p>
+        <img src="../images/icon-facebook.svg" alt="icon-facebook">
+      </div>
+      <div class="overview-footer">
+        <h2>52</h2>
+        <div class="stats">
+          <img src="../images/icon-down.svg" alt="icon-up">
+          <h5 class="color-red">2%</h5>
+        </div>
+      </div>
     </div>
     <div class="overview-card">
-      <p>Likes</p>
-      <i class="fab fa-instagram"></i>
-      <h2>5462</h2>
-      <h5>2257%</h5>
+      <div class="overview-header">
+        <p>Likes</p>
+        <img src="../images/icon-instagram.svg" alt="icon-instagram">
+      </div>
+      <div class="overview-footer">
+        <h2>5462</h2>
+        <div class="stats">
+          <img src="../images/icon-up.svg" alt="icon-up">
+          <h5 class="color-lime">2257%</h5>
+        </div>
+      </div>
     </div>
     <div class="overview-card">
-      <p>Profile Views</p>
-      <i class="fab fa-instagram"></i>
-      <h2>52k</h2>
-      <h5>1375%</h5>
+      <div class="overview-header">
+        <p>Profile Views</p>
+        <img src="../images/icon-instagram.svg" alt="icon-instagram">
+      </div>
+      <div class="overview-footer">
+        <h2>52k</h2>
+        <div class="stats">
+          <img src="../images/icon-up.svg" alt="icon-up">
+          <h5 class="color-lime">1375%</h5>
+        </div>
+      </div>
     </div>
     <div class="overview-card">
-      <p>Retweets</p>
-      <i class="fab fa-twiter"></i>
-      <h2>117</h2>
-      <h5>303%</h5>
+      <div class="overview-header">
+        <p>Retweets</p>
+        <img src="../images/icon-twitter.svg" alt="icon-twitter">
+      </div>
+      <div class="overview-footer">
+        <h2>117</h2>
+        <div class="stats">
+          <img src="../images/icon-up.svg" alt="icon-up">
+          <h5 class="color-lime">303%</h5>
+        </div>
+      </div>
     </div>
     <div class="overview-card">
-      <p>Likes</p>
-      <i class="fab fa-twiter"></i>
-      <h2>507</h2>
-      <h5>553%</h5>
+      <div class="overview-header">
+        <p>Likes</p>
+        <img src="../images/icon-twitter.svg" alt="icon-twitter">
+      </div>
+      <div class="overview-footer">
+        <h2>507</h2>
+        <div class="stats">
+          <img src="../images/icon-up.svg" alt="icon-up">
+          <h5 class="color-lime">553%</h5>
+        </div>
+      </div>
     </div>
     <div class="overview-card">
-      <p>Likes</p>
-      <i class="fab fa-youtube"></i>
-      <h2>107</h2>
-      <h5>19%</h5>
+      <div class="overview-header">
+        <p>Likes</p>
+        <img src="../images/icon-youtube.svg" alt="icon-youtube">
+      </div>
+      <div class="overview-footer">
+        <h2>107</h2>
+        <div class="stats">
+          <img src="../images/icon-down.svg" alt="icon-down">
+          <h5 class="color-red">19%</h5>
+        </div>
+      </div>
     </div>
     <div class="overview-card">
+      <div class="overview-header">
       <p>Total Views</p>
-      <i class="fab fa-youtube"></i>
-      <h2>1407</h2>
-      <h5>12%</h5>
+      <img src="../images/icon-youtube.svg" alt="icon-youtube">
+      </div>
+      <div class="overview-footer">
+        <h2>1407</h2>
+        <div class="stats">
+          <img src="../images/icon-down.svg" alt="icon-down">
+          <h5 class="color-red">12%</h5>
+        </div>
+      </div>
     </div>
   </div>
   
